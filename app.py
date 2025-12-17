@@ -151,7 +151,7 @@ else:
     # AI MODELS & DATASETS (ADDED – NO OTHER CHANGES)
     # -------------------------------------------------
     st.markdown("---")
-    st.markdown('<div class="main-header">AI Models & Datasets</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-subtitle">AI Models & Datasets</div>', unsafe_allow_html=True)
 
     model_files = [
         ("Universal Vehicle Dataset", "universal_dataset.csv",
