@@ -154,31 +154,31 @@ else:
     st.markdown('<div class="section-header">🧠 AI Models & Datasets</div>', unsafe_allow_html=True)
 
     model_files = [
-        ("📁 Universal Vehicle Dataset", "universal_dataset.csv",
+        ("Universal Vehicle Dataset", "universal_dataset.csv",
          "Vehicle telematics, maintenance & failure history.",
          "https://drive.google.com/file/d/16KX3wA0OznXbdclD4Do0mGIj7Nf12vYm/view?usp=sharing"),
 
-        ("⚠️ Risk Score Model", "risk_score_model.pkl",
+        ("Risk Score Model", "risk_score_model.pkl",
          "Vehicle risk scoring model.",
          "https://drive.google.com/file/d/1scEeN-V0cXYGZ-w8szfdljkUKEW8xwW4/view?usp=sharing"),
 
-        ("🔥 30-Day Engine Failure Model", "engine_failure_30d_model.pkl",
+        ("30-Day Engine Failure Model", "engine_failure_30d_model.pkl",
          "Predicts engine failure within 30 days.",
          "https://drive.google.com/file/d/10Ibirt1W5Zv10Dh1-zb2R9hrP6Izh_0j/view?usp=sharing"),
 
-        ("🤖 Complete Agent System", "complete_agent_system.pkl",
+        ("Complete Agent System", "complete_agent_system.pkl",
          "Integrated multi-agent AI system.",
          "https://drive.google.com/file/d/17_puXV0GplEqObBIvUVpvO-1yGcOkIz_/view?usp=sharing"),
 
-        ("🧬 Clustering Model", "clustering_model.pkl",
+        ("Clustering Model", "clustering_model.pkl",
          "Vehicle behavior clustering.",
          "https://drive.google.com/file/d/1q6tS47fFbYRozMI3taWL6uBGGzuffQu2/view?usp=sharing"),
 
-        ("📈 Anomaly Detection Model", "anomaly_detection_model.pkl",
+        ("Anomaly Detection Model", "anomaly_detection_model.pkl",
          "Detects abnormal sensor patterns.",
          "https://drive.google.com/file/d/1pqLzWAuQyL_GbCOSSICTIhlHDu1mggZ5/view?usp=sharing"),
 
-        ("❤️ Health Score Model", "health_score_model.pkl",
+        ("Health Score Model", "health_score_model.pkl",
          "Computes overall vehicle health.",
          "https://drive.google.com/file/d/1SUynzGtZu182x_4K3tsTWYoeGaR6hS6I/view?usp=sharing")
     ]
