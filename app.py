@@ -63,33 +63,6 @@ else:
     margin: 18px 0;
     border-left: 4px solid #764ba2;
 
-    /* 🔥 CRITICAL FIX */
-    color: #1f2937;   /* dark slate text */
-}
-
-/* Headings */
-.model-list h4 {
-    color: #111827;   /* almost black */
-    font-weight: 600;
-}
-
-/* Paragraphs */
-.model-list p {
-    color: #374151;   /* readable dark gray */
-    font-size: 15px;
-}
-
-/* File name emphasis */
-.model-list strong {
-    color: #111827;
-}
-
-/* Links */
-.model-list a {
-    color: #2563eb;
-    font-weight: 500;
-}
-
 
     </style>
     """, unsafe_allow_html=True)
