@@ -57,21 +57,39 @@ else:
     }
 
     .model-list {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 15px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 18px 0;
     border-left: 4px solid #764ba2;
-    color: #2c3e50;   /* ✅ FIX: force readable text */
+
+    /* 🔥 CRITICAL FIX */
+    color: #1f2937;   /* dark slate text */
 }
 
+/* Headings */
 .model-list h4 {
-    color: #2c3e50;
+    color: #111827;   /* almost black */
+    font-weight: 600;
 }
 
+/* Paragraphs */
 .model-list p {
-    color: #34495e;
+    color: #374151;   /* readable dark gray */
+    font-size: 15px;
 }
+
+/* File name emphasis */
+.model-list strong {
+    color: #111827;
+}
+
+/* Links */
+.model-list a {
+    color: #2563eb;
+    font-weight: 500;
+}
+
 
     </style>
     """, unsafe_allow_html=True)
