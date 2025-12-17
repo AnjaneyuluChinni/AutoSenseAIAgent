@@ -1,0 +1,252 @@
+Perfect — below is a SINGLE, COMPLETE, INDUSTRY-GRADE MASTER PROMPT that you can directly paste into Replit AI.
+This prompt is written exactly like a senior architect / EY consultant would specify it and covers ALL features from your problem statement, approach, PPT, agents, prediction, live tracking, scheduling, breakdowns, SQL DB, Streamlit frontend, Flask backend.
+You do NOT need to explain anything to Replit AI — this prompt is self-contained.
+________________________________________
+🔥 MASTER PROMPT FOR REPLIT AI
+(AutoSenseAI – EY Techathon 6.0 | Industry-Grade Build)
+________________________________________
+🧠 Project Name
+AutoSenseAI – Autonomous Predictive Maintenance & Smart Breakdown Management Platform
+________________________________________
+🎯 Business Problem (Context)
+Automotive OEMs and service ecosystems today suffer from reactive maintenance, unplanned breakdowns, poor service scheduling, and lack of real-time visibility into vehicle health and breakdown events.
+Vehicle owners face:
+•	Unexpected failures
+•	No real-time assistance
+•	No visibility into service availability or repair costs
+OEMs & service centers face:
+•	Inefficient slot utilization
+•	No predictive planning
+•	No closed-loop feedback from service to manufacturing
+________________________________________
+🚀 Solution Vision
+Build AutoSenseAI, an agent-driven, real-time, predictive automotive service platform that:
+•	Predicts upcoming service needs
+•	Tracks breakdowns with live location
+•	Recommends nearby garages automatically
+•	Schedules services intelligently
+•	Alerts users proactively
+•	Provides OEM & admin analytics
+•	Uses AI agents to autonomously manage decisions
+This solution must be production-style, demo-ready, and scalable, aligned with EY Techathon 6.0 evaluation criteria.
+________________________________________
+🧱 TECH STACK (MANDATORY)
+Frontend
+•	Streamlit
+•	Separate UI flows for:
+o	User Portal
+o	Admin / Management Portal
+Backend
+•	Python (Flask)
+•	REST APIs
+•	JWT Authentication
+Database
+•	SQL (SQLite for demo, PostgreSQL-ready)
+•	SQLAlchemy ORM
+AI / Logic
+•	ML + rule-based hybrid
+•	Agent-oriented architecture
+________________________________________
+👥 USER ROLES
+1️⃣ Vehicle Owner (USER)
+•	Can only see their own vehicles
+•	Can request service or breakdown help
+•	Receives predictions & alerts
+2️⃣ Admin / OEM / Service Manager (ADMIN)
+•	Full visibility
+•	Scheduling, analytics, pricing, garages
+•	Operational control
+________________________________________
+👤 USER PORTAL – FEATURES
+🔐 Authentication
+•	Secure login (JWT)
+•	Role-based access
+•	User-vehicle data isolation
+________________________________________
+🚗 Vehicle Dashboard
+•	Vehicle details
+•	Health indicators (engine, brakes, battery – simulated)
+•	Last service date
+•	Predicted next service date
+________________________________________
+🔮 Live Service Prediction (AI-Driven)
+Implement a prediction algorithm that calculates:
+•	Next service date
+•	Service urgency score
+Inputs:
+•	Last service date
+•	Vehicle usage (km/month)
+•	Manufacturer service interval
+•	Breakdown history
+Output:
+•	Predicted service date
+•	Confidence score
+•	Alert trigger
+________________________________________
+🔔 Proactive Alerts
+•	Upcoming service alerts
+•	Overdue service alerts
+•	Breakdown-risk alerts
+•	Alert priority (low → critical)
+________________________________________
+🗓️ Smart Service Scheduling
+•	User selects preferred date
+•	System checks service slot availability
+•	If unavailable:
+o	Automatically finds next best dates
+o	Auto-books optimal slot
+•	Fully autonomous scheduling logic
+________________________________________
+🚨 Breakdown Assistance (Live Location)
+•	Emergency “Breakdown” button
+•	Capture / simulate live vehicle location
+•	Show:
+o	Nearby garages (distance-based)
+o	Estimated arrival time
+o	Estimated repair time
+•	User selects garage → ticket raised
+________________________________________
+📍 Live Location Tracking (Simulation)
+•	Track breakdown vehicle location
+•	Track assigned garage movement (simulated)
+•	Update ETA dynamically
+________________________________________
+🏪 Spare Parts & Pricing
+•	Show required parts based on breakdown type
+•	Display:
+o	OEM price
+o	Availability
+•	Pull data from showroom pricing table
+________________________________________
+📊 User Analytics
+•	Service history in tabular format
+•	Button:
+👉 “Convert Table to Bar Chart”
+•	Dynamic chart generation
+________________________________________
+🏢 ADMIN / MANAGEMENT PORTAL – FEATURES
+📊 Admin Dashboard
+•	Total vehicles
+•	Active services
+•	Breakdown events
+•	Average repair time
+•	Garage utilization
+________________________________________
+🗓️ Service & Breakdown Management
+•	View all service & breakdown requests
+•	Assign garages
+•	Override schedules
+•	Update status:
+o	Open → In Progress → Completed
+________________________________________
+🏭 Garage Management
+•	Add / edit garages
+•	Define:
+o	Location
+o	Capacity
+o	Working hours
+o	Supported services
+________________________________________
+🔧 Parts & Pricing Management
+•	Manage spare parts
+•	Update prices
+•	Map parts to breakdown types
+________________________________________
+📈 Analytics & Insights
+•	Charts:
+o	Frequent breakdown types
+o	Service delays
+o	Garage performance
+•	Data export ready
+________________________________________
+🤖 AGENT-BASED ARCHITECTURE (MANDATORY)
+🧠 Master Orchestrator Agent
+•	Coordinates all agents
+•	Routes tasks dynamically
+________________________________________
+⚙️ Specialized AI Agents
+Implement each as a separate Python module:
+1.	Prediction Agent
+o	Predicts next service date
+2.	Alert Agent
+o	Generates alerts automatically
+3.	Scheduling Agent
+o	Checks slot availability
+o	Re-books alternative dates
+4.	Breakdown Agent
+o	Handles emergency workflows
+5.	Location Tracking Agent
+o	Tracks vehicle & garage movement
+6.	Garage Recommendation Agent
+o	Finds nearest suitable garage
+7.	ETA Estimation Agent
+o	Predicts arrival & repair time
+8.	Pricing Agent
+o	Estimates repair cost
+9.	Visualization Agent
+o	Converts table → charts
+10.	Feedback / RCA Agent
+o	Aggregates service feedback for OEM insights
+Each agent must:
+•	Operate independently
+•	Log decisions to DB
+•	Be callable via backend services
+________________________________________
+🗄️ DATABASE REQUIREMENTS (SQL)
+Tables must include:
+•	users
+•	vehicles
+•	garages
+•	service_requests
+•	service_slots
+•	breakdown_events
+•	spare_parts
+•	alerts
+•	feedback
+•	agent_logs
+________________________________________
+📐 EY TECHATHON MANDATORY DELIVERABLES
+The system must auto-generate or support:
+1.	Architecture diagram (agent flow)
+2.	End-to-end workflow diagram
+3.	UI wireframes
+4.	Demo dataset
+5.	Screenshots
+6.	Working prototype (MUST RUN)
+________________________________________
+📁 PROJECT STRUCTURE (EXPECTED)
+autosenseai/
+│── app.py
+│── backend/
+│   ├── routes/
+│   ├── services/
+│   ├── agents/
+│── database/
+│   ├── models.py
+│── frontend/
+│   ├── user_portal.py
+│   ├── admin_portal.py
+│── utils/
+│   ├── auth.py
+│── requirements.txt
+│── README.md
+________________________________________
+🏁 FINAL BUILD INSTRUCTIONS
+Build this as a production-style MVP:
+•	Modular
+•	Secure
+•	Scalable
+•	Demo-friendly
+Start implementation in this order:
+1.	Database schema
+2.	Flask backend APIs
+3.	Agent layer
+4.	Prediction & scheduling logic
+5.	Streamlit UI
+6.	Analytics & charts
+7.	Demo data & screenshots
+🚨 Do NOT skip agents or working prototype.
+________________________________________
+✅ END OF PROMPT
+________________________________________
+With powerful visualisation like dashboards, charts, analysis, graphs, full visualization
