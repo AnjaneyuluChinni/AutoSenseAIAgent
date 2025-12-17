@@ -57,7 +57,7 @@ else:
     }
 
     .model-list {
-    background-color: #ffffff;
+    color: #ffffff;
     border-radius: 10px;
     padding: 22px;
     margin: 18px 0;
