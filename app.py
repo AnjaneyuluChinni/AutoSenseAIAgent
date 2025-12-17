@@ -55,13 +55,24 @@ else:
         text-align: center;
         padding: 20px;
     }
+
     .model-list {
-        background-color: #f8f9fa;
-        border-radius: 8px;
-        padding: 20px;
-        margin: 15px 0;
-        border-left: 4px solid #764ba2;
-    }
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid #764ba2;
+    color: #2c3e50;   /* ✅ FIX: force readable text */
+}
+
+.model-list h4 {
+    color: #2c3e50;
+}
+
+.model-list p {
+    color: #34495e;
+}
+
     </style>
     """, unsafe_allow_html=True)
     
