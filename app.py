@@ -55,13 +55,22 @@ else:
         text-align: center;
         padding: 20px;
     }
+    .model-list {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 15px 0;
+        border-left: 4px solid #764ba2;
+    }
     </style>
     """, unsafe_allow_html=True)
     
     st.markdown("""
     <div class="main-header">
         <div class="main-title">AutoSenseAI</div>
-        <div class="main-subtitle">Autonomous Predictive Maintenance & Smart Breakdown Management Platform</div>
+        <div class="main-subtitle">
+            Autonomous Predictive Maintenance & Smart Breakdown Management Platform
+        </div>
     </div>
     """, unsafe_allow_html=True)
     
@@ -136,6 +145,55 @@ else:
             
             st.info("Demo: admin / admin123")
     
+    # -------------------------------------------------
+    # AI MODELS & DATASETS (ADDED – NO OTHER CHANGES)
+    # -------------------------------------------------
+    st.markdown("---")
+    st.markdown('<div class="section-header">🧠 AI Models & Datasets</div>', unsafe_allow_html=True)
+
+    model_files = [
+        ("📁 Universal Vehicle Dataset", "universal_dataset.csv",
+         "Vehicle telematics, maintenance & failure history.",
+         "https://drive.google.com/file/d/16KX3wA0OznXbdclD4Do0mGIj7Nf12vYm/view?usp=sharing"),
+
+        ("⚠️ Risk Score Model", "risk_score_model.pkl",
+         "Vehicle risk scoring model.",
+         "https://drive.google.com/file/d/1scEeN-V0cXYGZ-w8szfdljkUKEW8xwW4/view?usp=sharing"),
+
+        ("🔥 30-Day Engine Failure Model", "engine_failure_30d_model.pkl",
+         "Predicts engine failure within 30 days.",
+         "https://drive.google.com/file/d/10Ibirt1W5Zv10Dh1-zb2R9hrP6Izh_0j/view?usp=sharing"),
+
+        ("🤖 Complete Agent System", "complete_agent_system.pkl",
+         "Integrated multi-agent AI system.",
+         "https://drive.google.com/file/d/17_puXV0GplEqObBIvUVpvO-1yGcOkIz_/view?usp=sharing"),
+
+        ("🧬 Clustering Model", "clustering_model.pkl",
+         "Vehicle behavior clustering.",
+         "https://drive.google.com/file/d/1q6tS47fFbYRozMI3taWL6uBGGzuffQu2/view?usp=sharing"),
+
+        ("📈 Anomaly Detection Model", "anomaly_detection_model.pkl",
+         "Detects abnormal sensor patterns.",
+         "https://drive.google.com/file/d/1pqLzWAuQyL_GbCOSSICTIhlHDu1mggZ5/view?usp=sharing"),
+
+        ("❤️ Health Score Model", "health_score_model.pkl",
+         "Computes overall vehicle health.",
+         "https://drive.google.com/file/d/1SUynzGtZu182x_4K3tsTWYoeGaR6hS6I/view?usp=sharing")
+    ]
+
+    for name, file, desc, url in model_files:
+        st.markdown(f"""
+        <div class="model-list">
+            <h4>{name}</h4>
+            <p><strong>{file}</strong></p>
+            <p>{desc}</p>
+            <p><a href="{url}" target="_blank">Download Model</a></p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    # -------------------------------------------------
+    # AGENTS (UNCHANGED)
+    # -------------------------------------------------
     st.markdown("---")
     
     st.markdown("## Agent-Based Architecture")
